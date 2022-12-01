@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<br><br><br><br><br><br><br><br>
+<h2>Delete selected task</h2><br><br><br>
+<form method="POST">
+  {% csrf_token %}
+  <br>
+  <p>Are you sure this task is done?</p><br>
+  <button type="submit">Confirm</button>
+</form>
+{% endblock %}
